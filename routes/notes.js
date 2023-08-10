@@ -12,13 +12,13 @@ notes.get('/', (req, res) => {
 });
 
 // GET Route for a specific note
-notes.get('/:note_id', (req, res) => {
-  const noteId = req.params.note_id;
+notes.get('/:id', (req, res) => {
+  const noteId = req.params.id;
   readFromFile('./db/db.json')
     .then((data) => JSON.parse(data))
     .then((json) => {
       // Filter json data for a note that has the same note id as the one sent in the request params
-      const result = json.filter((note) => note.noteId === noteId);
+      const result = json.filter((note) => note.id === noteId);
       // If note is greater than 0 in length, return the note, otherwise return an error message
       return result.length > 0
         ? res.json(result)
@@ -27,13 +27,13 @@ notes.get('/:note_id', (req, res) => {
 });
 
 // DELETE Route for a specific note
-notes.delete('/:note_id', (req, res) => {
-  const noteId = req.params.note_id;
-  readFromFile('./db/tips.json')
+notes.delete('/:id', (req, res) => {
+  const noteId = req.params.id;
+  readFromFile('./db/db.json')
     .then((data) => JSON.parse(data))
     .then((json) => {
       // Filter json data to create new array with all notes excluding the note with the ID sent in the request params
-      const result = json.filter((note) => note.noteId !== noteId);
+      const result = json.filter((note) => note.id !== noteId);
 
       // Save filtered array to the json database db.json
       writeToFile('./db/db.json', result);
@@ -48,14 +48,14 @@ notes.post('/', (req, res) => {
   console.log(req.body);
 
   // Create variables containing new note's title and content
-  const { noteTitle, noteContent } = req.body;
+  const { title, text } = req.body;
 
   // Create new note object containing title, content and a randomly-generated note ID
   if (req.body) {
     const newNote = {
-      noteTitle,
-      noteContent,
-      noteId: uuidv4(),
+      title,
+      text,
+      id: uuidv4(),
     };
 
     // Add new note to the json db

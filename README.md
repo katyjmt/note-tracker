@@ -20,7 +20,7 @@ A simple note-taking web app, allowing the user to effortlessly jot down and sto
 - Delete unwanted notes
 
 ## Installation
-The app can be accessed at _______[heroku]
+The app can be accessed at [https://note-tracker-katyjmt-f22e1c4a70b6.herokuapp.com/](https://note-tracker-katyjmt-f22e1c4a70b6.herokuapp.com/)
 
 ## Screenshot
 ![Screenshot of Note Tracker interface](./assets/note-tracker.png)

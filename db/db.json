@@ -1,17 +1,17 @@
 [
     {
-        "title": "Test",
-        "text": "123\n",
-        "id": "f22e6890-6b08-42f5-bd39-5b89e74bd1fe"
+        "title": "Project Plan",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "id": "1b3b566d-6fa6-4cfc-87f3-74186acd4cb7"
     },
     {
-        "title": "Test Note",
-        "text": "124524624",
-        "id": "cbf53379-2dae-49da-afce-33e8d208999a"
+        "title": "Client Notes",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "id": "8ffcd1ba-227b-43c8-8239-86949e3de9d9"
     },
     {
-        "title": "New Note",
-        "text": "This is a note",
-        "id": "968bca64-5a5b-4120-9b44-7a44b77b2270"
+        "title": "Weekly Meal Plan",
+        "text": "Monday:\n\nTuesday:\n\nWednesday:\n\nThursday:\n\nFriday:\n\nSaturday:\n\nSunday:",
+        "id": "10be7710-d651-4e0c-b506-b45f7246272d"
     }
 ]
